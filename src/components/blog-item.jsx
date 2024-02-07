@@ -1,4 +1,4 @@
-import { BsHeart, BsHeartFill, BsChatSquareText, BsChatSquareTextFill     } from "react-icons/bs";
+import { BsHeart, BsChatSquareText } from "react-icons/bs";
 
 function BlogItem(params) {
     return (
