@@ -51,7 +51,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel my-12 mx-auto bg-slate-300 rounded-2xl overflow-hidden">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden h-[32rem]">
         <div className="flex justify-between absolute top left w-full h-full">
           <button
             onClick={movePrev}
@@ -98,13 +98,13 @@ const Carousel = () => {
         </div>
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+          className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0 h-full"
         >
           {data.resources.map((resource, index) => {
             return (
               <div
                 key={index}
-                className="carousel-item text-center relative w-64 h-64 snap-start"
+                className="carousel-item text-center relative w-64 h-64 snap-start h-full"
               >
                 <a
                   href={resource.link}
